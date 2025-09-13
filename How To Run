@@ -1,0 +1,20 @@
+Create the database:
+   ```sql
+   CREATE DATABASE employee_db;
+   USE employee_db;
+   CREATE TABLE employees (
+       id INT PRIMARY KEY AUTO_INCREMENT,
+       name VARCHAR(100) NOT NULL,
+       department VARCHAR(50),
+       salary DOUBLE
+   );
+
+Update DB credentials in DBConnection.java.
+
+Compile:
+
+javac *.java
+
+Run:
+
+java Main
